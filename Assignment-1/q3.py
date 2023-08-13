@@ -14,7 +14,9 @@ def generate(x0: float, alpha: float, generations: int = 50) -> list[float]:
 
 if __name__ == "__main__":
     plt.plot(generate(x0=0.1, alpha=0.8), label=r"$x_0 = 0.1, \alpha=0.8$")
+    plt.plot(generate(x0=0.1, alpha=1.5), label=r"$x_0 = 0.1, \alpha=1.5$")
     plt.plot(generate(x0=0.5, alpha=1.5), label=r"$x_0 = 0.5, \alpha=1.5$")
+    plt.plot(generate(x0=0.5, alpha=0.8), label=r"$x_0 = 0.5, \alpha=0.8$")
     plt.plot(generate(x0=0.001, alpha=3.2), label=r"$x_0 = 0.001, \alpha=3.2$")
 
     plt.xlabel("Time")
