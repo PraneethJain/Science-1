@@ -33,9 +33,17 @@ $ Z = V_m / V_m^o $
 $ Z = ((R T)/p (1 + B^' p + C^' p^2 + ...)) / ((R T) / p) $
 $ Z = 1 + B^' p + C^' p^2 + ... $
 $ (d Z)/(d p) = B' + 2 C^'p + ... $
-$ "As" p arrow.r 0, (d Z) / (d p) arrow.r B^' $
-
+$ "As" p arrow.r 0, (d Z) / (d p) arrow.r B^' "and" Z arrow.r 1 $
 == (d)
+
+$20K: $
+Below Boyle's temperature, at low pressure, $Z$ decreases with increase in pressure, but at high pressure, $Z$ increases with pressure.
+
+$22.64K:$
+At Boyle's temperate, $Z approx 1$ for a considerable range of pressure, after which $Z$ increases with pressure.
+
+$25K: $
+Above Boyle's temperature, $Z$ increases as pressure increases. However, the gas can never be liquified at this temperature.
 
 == (e)
 Boyle temperature is the temperature for which the second virial coefficient is zero. 
