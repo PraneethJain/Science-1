@@ -80,7 +80,7 @@ $ Z = 1 + (p b) / (R T) $
 
 Therefore, at high pressure, the compressibility factor $Z$ is greater than one.
  
- = Question 2
+= Question 2
 
 Vanderwaal's equation for a mole of gas is given by
 
@@ -108,3 +108,17 @@ $ (p_c + a/(9 b^2)) 2 b = (8 a)/(27 b) $
 $ p_c = a/(27b^2) $
 
 The critical constants are $p_c = a/(27b^2), T_c = (8 a)/(27 R b), V_c = 3b$
+
+= Question 3
+
+Vanderwaal's equation for a mole of gas is given by
+
+Let $X/X_c "be" X_r$
+
+$ (p + a / V^2) (V - b) = R T $
+$ (p / p_c a/(27b^2) + a/((3b)^2(V / V_c)^2))(V/V_c 3b - b) = R T/T_c (8a)/(27 R b) $
+$ (p_r a/(27b^2) + a/((9b^2)V_r^2))3b(V_r - 1/3) = R T_r (8a)/(27 R b) $
+$ a/b (p_r/9 + 1/(3V_r^2)) (V_r - 1/3) = R T_r (8a)/(27 R b) $
+$ (p_r + 3/V_r^2) (V_r - 1/3) = 8/3 T_r $
+
+This is the reduced form of Vanderwaal's equation.
