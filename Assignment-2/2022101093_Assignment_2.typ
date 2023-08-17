@@ -80,3 +80,31 @@ $ Z = 1 + (p b) / (R T) $
 
 Therefore, at high pressure, the compressibility factor $Z$ is greater than one.
  
+ = Question 2
+
+Vanderwaal's equation for a mole of gas is given by
+
+$ (p + a / V^2) (V - b) = R T $
+$ p = (R T) / (V - b) - a / V^2 $
+At critical point, $(diff p) / (diff V) = 0$
+$ (diff p) / (diff V) = (- R T)/(V - b)^2 + (2 a)/V^3 $
+$ 0 = (- R T_c) / (V_c - b)^2 + (2 a)/V_c^3 $
+$ (R T_c) / (V_c - b)^2 = (2 a)/V_c^3 $
+$ T_c = (2 a (V_c - b)^2) / (R V_c^3) $
+At critical point, $(diff^2 p) / (diff V^2) = 0$
+$ (diff^2 p) / (diff V^2) = (2 R T) / (V - b)^3 - (6 a) / V^4 $
+$ 0 = (2 R T_c) / (V_c - b)^3 - (6 a) / V_c^4 $
+$ (R T_c) / (V_c - b)^3 = (3 a) / V_c^4 $
+$ T_c = (3 a (V_c - b)^3) / (R V_c^4) $
+
+$ therefore (2 a (V_c - b)^2) / (R V_c^3) = (3 a (V_c - b)^3) / (R V_c^4) $
+
+$ 2 V_c = 3 V_c - 3 b $
+$ V_c = 3 b $
+$ T_c = (3 a (3b - b)^3) / (R (3b)^4) $
+$ T_c = (8 a) / (27 R b) $
+$ (p_c + a/V_c^2) (V_c - b) = R T_c $
+$ (p_c + a/(9 b^2)) 2 b = (8 a)/(27 b) $
+$ p_c = a/(27b^2) $
+
+The critical constants are $p_c = a/(27b^2), T_c = (8 a)/(27 R b), V_c = 3b$
