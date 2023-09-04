@@ -48,6 +48,9 @@ Note that the integral is path dependent
 
 Since $d g$ is not equal to the differential of a differentiable function, it is an inexact differential.
 
+== (e)
+$g$ should be called a path function and $f$ should be called a state function. $integral d g$ is an inexact differential and depends on the path, hence it as a path function. $integral d f$ is an exact differential and is independent of the path taken, hence it is a state function.
+
 = Question 2
 Assuming 1 mole of gas as $U = C_V T$
 
