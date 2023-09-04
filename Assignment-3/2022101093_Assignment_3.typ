@@ -107,3 +107,51 @@ $ kappa_T R = alpha (V_m - b) $
 Hence, proven.
 
 = Question 4
+
+Assuming $n$ moles of liquid water initially at $-10^o C$.
+
+Let the latent heat of fusion of water be $L$, specific heat of water be $s$.
+
+
+Since result is a mixture of ice and water, this is only possible at tempetarure $T_2 = 0^o C$. ($T_1 = -10^o C$)
+
+Therefore, $Delta T = 10K$.
+
+Since the compartment is thermally insulated, $q = 0J$.
+
+The latent heat of ice will be compensted by the heating of water.
+
+$ n * 18 * s * Delta T = m_"ice" * L $
+
+$ m_"ice" = (18 n s Delta T)/L $
+
+Let $H_1$ be enthalpy change in heating of water and $H_2$ be enthalpy change of fusion.
+
+$ Delta H = Delta H_1 + Delta H_2 $
+
+$ Delta H_1 = 18 n s Delta T $
+$ Delta H_2 = Delta H_"fusion" = - m_"ice" L $
+
+$ Delta H = 18 n s Delta T - m_"ice" L $
+$ Delta H = 0 $
+
+Note that for liquids and solids, $Delta U approx Delta H$
+
+$ Delta U = 0 $
+
+From first law of thermodynamics
+
+$ Delta U = q + w $
+$ w = 0 $
+
+Let $Delta S_1$ be entropy change in heating of water and $Delta S_2$ be entropy change of fusion.
+
+$ Delta S_1 = m s ln(T_2/T_1) $
+$ Delta S_1 = 18 n s ln(283/273) $
+
+$ Delta S_2 = (Delta H_"fusion")/ T $
+$ Delta S_2 = -(m_"ice" L)/273 $
+$ Delta S_2 = - (18 n s Delta T)/273 $
+$ Delta S_2 = - (60 n s)/91 $
+
+$ Delta S = n s (18 ln(283/273) - 60/91) $
