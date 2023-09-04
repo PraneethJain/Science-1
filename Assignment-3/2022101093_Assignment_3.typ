@@ -147,11 +147,11 @@ $ w = 0 $
 Let $Delta S_1$ be entropy change in heating of water and $Delta S_2$ be entropy change of fusion.
 
 $ Delta S_1 = m s ln(T_2/T_1) $
-$ Delta S_1 = 18 n s ln(283/273) $
+$ Delta S_1 = 18 n s ln(273/263) $
 
 $ Delta S_2 = (Delta H_"fusion")/ T $
 $ Delta S_2 = -(m_"ice" L)/273 $
 $ Delta S_2 = - (18 n s Delta T)/273 $
 $ Delta S_2 = - (60 n s)/91 $
 
-$ Delta S = n s (18 ln(283/273) - 60/91) $
+$ Delta S = n s (18 ln(273/263) - 60/91) $
