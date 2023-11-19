@@ -144,3 +144,29 @@ $ P(sigma_3) = cases(
   1/2 " for state" ket(x_1),
   1/2 " for state" ket(x_2),
 ) $
+
+== (d)
+For $Delta sigma_1$
+$ Delta sigma_1^2 = angle.l sigma_1^2 angle.r - angle.l sigma_1 angle.r ^ 2 $
+$ Delta sigma_1^2 = angle.l phi|sigma_1^2|phi  angle.r - angle.l phi|sigma_1|phi angle.r ^ 2 $
+$ Delta sigma_1^2 = mat(1/sqrt(2), -i/sqrt(2))*mat(0, 1; 1, 0)*mat(0, 1; 1, 0)*mat(1/sqrt(2); i/sqrt(2)) - (mat(1/sqrt(2), -i/sqrt(2))*mat(0, 1; 1, 0)*mat(1/sqrt(2); i/sqrt(2))) ^ 2 $
+$ Delta sigma_1^2 = 1 - 0 $
+$ Delta sigma_1^2 = 1 $
+
+For $Delta sigma_3$
+$ Delta sigma_3^2 = angle.l sigma_3^2 angle.r - angle.l sigma_3 angle.r ^ 2 $
+$ Delta sigma_3^2 = angle.l phi|sigma_3^2|phi angle.r - angle.l phi|sigma_3|phi angle.r ^ 2 $
+$ Delta sigma_3^2 = mat(1/sqrt(2), -i/sqrt(2))*mat(1, 0; 0, -1)*mat(1, 0; 0, -1)*mat(1/sqrt(2); i/sqrt(2)) - (mat(1/sqrt(2), -i/sqrt(2))*mat(1, 0; 0, -1)*mat(1/sqrt(2); i/sqrt(2))) ^ 2 $
+$ Delta sigma_3^2 = 1 - 0 $
+$ Delta sigma_3^2 = 1 $
+
+So, the uncertainty $Delta sigma_1 = 1, Delta sigma_3 = 1, Delta sigma_1 Delta sigma_3 = 1$.
+
+According to the uncertainty principle
+$ Delta sigma_1 Delta sigma_3 >= 1/2 |angle.l [sigma_1, sigma_3] angle.r| $
+$ Delta sigma_1 Delta sigma_3  >= 1/2 |angle.l phi|sigma_1 sigma_3|phi angle.r| $
+$ Delta sigma_1 Delta sigma_3  >= 1/2 |mat(1/sqrt(2), -i/sqrt(2)) * mat(0, 2; -2, 0) * mat(1/sqrt(2); i / sqrt(2))| $
+$ Delta sigma_1 Delta sigma_3  >= 1/2 |2i| $
+$ Delta sigma_1 Delta sigma_3  >= 1 $
+
+These are the corresponding uncertainty relations.
