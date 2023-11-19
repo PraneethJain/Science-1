@@ -246,6 +246,11 @@ Variance $= sigma_H^2 = angle.l H^2 angle.r - angle.l H angle.r^2$
 TO DO
 
 == (b)
+$ ket(psi(x, t)) = 1/sqrt(L) e^(-i (pi^2 planck.reduce^2)/(2 m L^2) t) sin((pi x)/ L) +  1/sqrt(L) e^(-i (2 pi^2 planck.reduce^2)/(m L^2) t) sin((2 pi x)/ L) $
+$ P(x=L/2, t=0) = |psi(x=L/2, t=0)|^2 $
+$ P(x=L/2, t=0) = |(sin(pi/2) + sin(pi))/sqrt(L)|^2 $
+$ P(x=L/2, t=0) = |(1 + 0)/sqrt(L)|^2 $
+$ P(x=L/2, t=0) = 1/L $
 
 == (c)
 
