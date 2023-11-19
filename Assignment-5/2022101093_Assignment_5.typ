@@ -290,3 +290,22 @@ At time t = 0,
 $ (sigma_x^2)_(t=0) = L^2(1/12 - 5/(16 pi^2) - 256 / (81 pi^4)) $
 
 == (d)
+The momentum operator is given by
+$ hat(p) =  -i planck.reduce diff / (diff x) $
+
+Average momentum $= angle.l hat(p) angle.r = angle.l psi|hat(p)|psi angle.r$
+$ angle.l hat(p) angle.r = integral_0^L 1/sqrt(L)(e^(i (pi^2 planck.reduce^2)/(2 m L^2) t) sin((pi x)/ L) +  e^(i (2 pi^2 planck.reduce^2)/(m L^2) t) sin((2 pi x)/ L))(-i planck.reduce diff/(diff x)1/sqrt(L)(e^(-i (pi^2 planck.reduce^2)/(2 m L^2) t) sin((pi x)/ L) + e^(-i (2 pi^2 planck.reduce^2)/(m L^2) t) sin((2 pi x)/ L))) d x $
+
+$ angle.l hat(p) angle.r = -(i planck.reduce)/L integral_0^L (e^(i (pi^2 planck.reduce^2)/(2 m L^2) t) sin((pi x)/ L) +  e^(i (2 pi^2 planck.reduce^2)/(m L^2) t) sin((2 pi x)/ L))(diff/(diff x)(e^(-i (pi^2 planck.reduce^2)/(2 m L^2) t) sin((pi x)/ L) + e^(-i (2 pi^2 planck.reduce^2)/(m L^2) t) sin((2 pi x)/ L))) d x $
+
+$ angle.l hat(p) angle.r = -(i planck.reduce)/L integral_0^L (e^(i (pi^2 planck.reduce^2)/(2 m L^2) t) sin((pi x)/ L) +  e^(i (2 pi^2 planck.reduce^2)/(m L^2) t) sin((2 pi x)/ L))(pi/L e^(-i (pi^2 planck.reduce^2)/(2 m L^2) t) cos((pi x)/ L) + (2 pi)/L e^(-i (2 pi^2 planck.reduce^2)/(m L^2) t) cos((2 pi x)/ L)) d x $
+
+$ angle.l hat(p) angle.r = -(i planck.reduce pi)/L^2 integral_0^L (e^(i (pi^2 planck.reduce^2)/(2 m L^2) t) sin((pi x)/ L) +  e^(i (2 pi^2 planck.reduce^2)/(m L^2) t) sin((2 pi x)/ L))(e^(-i (pi^2 planck.reduce^2)/(2 m L^2) t) cos((pi x)/ L) + 2 e^(-i (2 pi^2 planck.reduce^2)/(m L^2) t) cos((2 pi x)/ L)) d x $
+
+$ angle.l hat(p) angle.r = -(i planck.reduce pi)/L^2 integral_0^L (sin((pi x)/L) cos((pi x)/L) + 2 sin((2 pi x)/L) cos((2 pi x)/L) + \ 2 sin((pi x)/L) cos((2 pi x)/ L) e^(-i (3 pi^2 planck.reduce^2)/(2 m L^2) t) + sin((2 pi x)/L) cos((pi x)/L) e^(i (3 pi^2 planck.reduce^2)/(2 m L^2) t)) d x $
+$ angle.l hat(p) angle.r = - (i h pi)/(L^2) ((4 L) / (3 pi) (e^(i (3 pi^2 planck.reduce^2)/(2 m L^2) t) - e^(-i (3 pi^2 planck.reduce^2)/(2 m L^2) t)) ) $
+
+$ angle.l hat(p) angle.r = - (4 i h)/(3 L) (e^(i (3 pi^2 planck.reduce^2)/(2 m L^2) t) - e^(-i (3 pi^2 planck.reduce^2)/(2 m L^2) t)) $
+
+At time t = 0,
+$ angle.l hat(p) angle.r_(t = 0) = 0 $
