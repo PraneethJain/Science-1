@@ -215,6 +215,35 @@ $ ket(psi(x, t)) = 1/sqrt(2) e^(-i E_1 t) ket(phi_1) + 1/sqrt(2) e^(-i E_2 t) ke
 $ ket(psi(x, t)) = 1/sqrt(L) e^(-i (pi^2 planck.reduce^2)/(2 m L^2) t) sin((pi x)/ L) +  1/sqrt(L) e^(-i (2 pi^2 planck.reduce^2)/(m L^2) t) sin((2 pi x)/ L) $
 
 == (a)
+The total energy (Hamiltonian) operator is given by
+$ H =  -planck.reduce^2/(2m) diff^2/(diff x^2) + V(x) $
+We consider only the region between the walls, as outside, the probability is $0$.
+$ H = -planck.reduce^2/(2m) diff^2/(diff x^2) $
+
+Average energy $= angle.l H angle.r = angle.l psi|H|psi angle.r$
+$ angle.l H angle.r = integral_0^L psi^dagger H psi d x $
+$ angle.l H angle.r = integral_0^L 1/sqrt(L)(e^(i (pi^2 planck.reduce^2)/(2 m L^2) t) sin((pi x)/ L) +  e^(i (2 pi^2 planck.reduce^2)/(m L^2) t) sin((2 pi x)/ L))(-planck.reduce^2/(2m) diff^2/(diff x^2)1/sqrt(L)(e^(-i (pi^2 planck.reduce^2)/(2 m L^2) t) sin((pi x)/ L) + e^(-i (2 pi^2 planck.reduce^2)/(m L^2) t) sin((2 pi x)/ L))) d x $
+
+$ angle.l H angle.r = -(planck.reduce^2)/(2 m L) integral_0^L (e^(i (pi^2 planck.reduce^2)/(2 m L^2) t) sin((pi x)/ L) +  e^(i (2 pi^2 planck.reduce^2)/(m L^2) t) sin((2 pi x)/ L) H psi)(diff^2/(diff x^2)(e^(-i (pi^2 planck.reduce^2)/(2 m L^2) t) sin((pi x)/ L) + e^(-i (2 pi^2 planck.reduce^2)/(m L^2) t) sin((2 pi x)/ L))) d x $
+
+$ angle.l H angle.r = -(planck.reduce^2)/(2 m L) integral_0^L (e^(i (pi^2 planck.reduce^2)/(2 m L^2) t) sin((pi x)/ L) +  e^(i (2 pi^2 planck.reduce^2)/(m L^2) t) sin((2 pi x)/ L) H psi)(- pi^2/L^2 e^(-i (pi^2 planck.reduce^2)/(2 m L^2) t) sin((pi x)/ L) - 4 pi^2/L^2 e^(-i (2 pi^2 planck.reduce^2)/(m L^2) t) sin((2 pi x)/ L)) d x $
+
+$ angle.l H angle.r = (planck.reduce^2 pi^2)/(2 m L^3) integral_0^L (e^(i (pi^2 planck.reduce^2)/(2 m L^2) t) sin((pi x)/ L) +  e^(i (2 pi^2 planck.reduce^2)/(m L^2) t) sin((2 pi x)/ L) H psi)(e^(-i (pi^2 planck.reduce^2)/(2 m L^2) t) sin((pi x)/ L) + 4e^(-i (2 pi^2 planck.reduce^2)/(m L^2) t) sin((2 pi x)/ L)) d x $
+
+$ angle.l H angle.r = (planck.reduce^2 pi^2)/(2 m L^3) integral_0^L (sin^2((pi x)/ L) + 4 sin^2((2 pi x)/ L) + 4 e^(- i (3 pi^2 planck.reduce^2)/(2 m L^2) t) sin((pi x)/L) sin((2 pi x)/ L) + e^(i (3 pi^2 planck.reduce^2)/(2 m L^2) t) sin((pi x)/ L) sin((2 pi x)/ L)) d x $
+
+$ angle.l H angle.r = (planck.reduce^2 pi^2)/(2 m L^3) integral_0^L (sin^2((pi x)/ L) + 4 sin^2((2 pi x)/ L) + (e^(i (3 pi^2 planck.reduce^2)/(2 m L^2) t) + e^(- i (3 pi^2 planck.reduce^2)/(2 m L^2) t))sin((pi x)/L) sin((2 pi x)/ L)) d x $
+
+$ angle.l H angle.r = (planck.reduce^2 pi^2)/(2 m L^3)(L/2 + 2L + integral_0^L (e^(i (3 pi^2 planck.reduce^2)/(2 m L^2) t) + e^(- i (3 pi^2 planck.reduce^2)/(2 m L^2) t))sin((pi x)/L) sin((2 pi x)/ L) d x)  $
+
+$ angle.l H angle.r = (planck.reduce^2 pi^2)/(2 m L^3)((5 L) / 2 + (e^(i (3 pi^2 planck.reduce^2)/(2 m L^2) t) + e^(- i (3 pi^2 planck.reduce^2)/(2 m L^2) t)) * 0)  $
+
+$ angle.l H angle.r = (planck.reduce^2 pi^2)/(2 m L^3)((5 L) / 2) $
+$ angle.l H angle.r = (5 planck.reduce^2 pi^2)/(4 m L^2) $
+
+Variance $= sigma_H^2 = angle.l H^2 angle.r - angle.l H angle.r^2$
+
+TO DO
 
 == (b)
 
