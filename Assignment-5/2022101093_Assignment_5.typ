@@ -253,5 +253,40 @@ $ P(x=L/2, t=0) = |(1 + 0)/sqrt(L)|^2 $
 $ P(x=L/2, t=0) = 1/L $
 
 == (c)
+Average $x$ $= angle.l x angle.r = angle.l psi|x|psi angle.r$
+$ angle.l x angle.r = integral_0^L psi^dagger x psi d x $
+$ angle.l x angle.r = integral_0^L 1/sqrt(L)(e^(i (pi^2 planck.reduce^2)/(2 m L^2) t) sin((pi x)/ L) +  e^(i (2 pi^2 planck.reduce^2)/(m L^2) t) sin((2 pi x)/ L))( x 1/sqrt(L)(e^(-i (pi^2 planck.reduce^2)/(2 m L^2) t) sin((pi x)/ L) + e^(-i (2 pi^2 planck.reduce^2)/(m L^2) t) sin((2 pi x)/ L))) d x $
+
+$ angle.l x angle.r = 1/L integral_0^L x (e^(i (pi^2 planck.reduce^2)/(2 m L^2) t) sin((pi x)/ L) +  e^(i (2 pi^2 planck.reduce^2)/(m L^2) t) sin((2 pi x)/ L)) (e^(-i (pi^2 planck.reduce^2)/(2 m L^2) t) sin((pi x)/ L) + e^(-i (2 pi^2 planck.reduce^2)/(m L^2) t) sin((2 pi x)/ L)) d x $
+
+$ angle.l x angle.r = 1/L integral_0^L x (sin^2((pi x)/L) + sin^2((2 pi x)/L) + (e^(-i (3 pi^2 planck.reduce^2)/(2 m L^2) t) + e^(i (3 pi^2 planck.reduce^2)/(2 m L^2) t)) sin((pi x)/L) sin((2 pi x)/ L)) d x $
+
+$ angle.l x angle.r = 1/L (1/2 - 8/(9 pi^2) (e^(-i (3 pi^2 planck.reduce^2)/(2 m L^2) t) + e^(i (3 pi^2 planck.reduce^2)/(2 m L^2) t)))L^2 $
+
+$ angle.l x angle.r = L/2 - (8 L)/(9 pi^2) (e^(-i (3 pi^2 planck.reduce^2)/(2 m L^2) t) + e^(i (3 pi^2 planck.reduce^2)/(2 m L^2) t)) $
+
+At time $t=0$, $ angle.l x angle.r_(t=0) = L(1/2 - 16/(9 pi^2)) $
+
+We find the average second moment
+$ angle.l x^2 angle.r = integral_0^L psi^dagger x^2 psi d x $
+$ angle.l x^2 angle.r = integral_0^L 1/sqrt(L)(e^(i (pi^2 planck.reduce^2)/(2 m L^2) t) sin((pi x)/ L) +  e^(i (2 pi^2 planck.reduce^2)/(m L^2) t) sin((2 pi x)/ L))( x^2 1/sqrt(L)(e^(-i (pi^2 planck.reduce^2)/(2 m L^2) t) sin((pi x)/ L) + e^(-i (2 pi^2 planck.reduce^2)/(m L^2) t) sin((2 pi x)/ L))) d x $
+
+$ angle.l x^2 angle.r = 1/L integral_0^L x^2 (e^(i (pi^2 planck.reduce^2)/(2 m L^2) t) sin((pi x)/ L) +  e^(i (2 pi^2 planck.reduce^2)/(m L^2) t) sin((2 pi x)/ L)) (e^(-i (pi^2 planck.reduce^2)/(2 m L^2) t) sin((pi x)/ L) + e^(-i (2 pi^2 planck.reduce^2)/(m L^2) t) sin((2 pi x)/ L)) d x $
+
+$ angle.l x^2 angle.r = 1/L integral_0^L x^2 (sin^2((pi x)/L) + sin^2((2 pi x)/L) + (e^(-i (3 pi^2 planck.reduce^2)/(2 m L^2) t) + e^(i (3 pi^2 planck.reduce^2)/(2 m L^2) t)) sin((pi x)/L) sin((2 pi x)/ L)) d x $
+
+$ angle.l x^2 angle.r = 1/L (1/3 - 5/(16 pi^2) - 8/(9 pi^2) (e^(-i (3 pi^2 planck.reduce^2)/(2 m L^2) t) + e^(i (3 pi^2 planck.reduce^2)/(2 m L^2) t))) L^3 $
+
+$ angle.l x^2 angle.r = L^2 (1/3 - 5/(16 pi^2) - 8/(9 pi^2) (e^(-i (3 pi^2 planck.reduce^2)/(2 m L^2) t) + e^(i (3 pi^2 planck.reduce^2)/(2 m L^2) t))) $
+
+Now, we can find the variance
+$ sigma_x^2 = angle.l x^2 angle.r - angle.l x angle.r^2 $
+
+$ sigma_x^2 = L^2 (1/3 - 5/(16 pi^2) - 8/(9 pi^2) (e^(-i (3 pi^2 planck.reduce^2)/(2 m L^2) t) + e^(i (3 pi^2 planck.reduce^2)/(2 m L^2) t))) - L^2(1/4 + 64/(81 pi^4)(e^(-i (3 pi^2 planck.reduce^2)/(m L^2) t) + e^(i (3 pi^2 planck.reduce^2)/(m L^2) t) + 2) - 8/(9 pi^2) (e^(-i (3 pi^2 planck.reduce^2)/(2 m L^2) t) + e^(i (3 pi^2 planck.reduce^2)/(2 m L^2) t))) $
+
+$ sigma_x^2 = L^2 (1/12 - 5/(16 pi^2) - 64/(81 pi^4)(e^(-i (3 pi^2 planck.reduce^2)/(m L^2) t) + e^(i (3 pi^2 planck.reduce^2)/(m L^2) t) + 2)) $
+
+At time t = 0,
+$ (sigma_x^2)_(t=0) = L^2(1/12 - 5/(16 pi^2) - 256 / (81 pi^4)) $
 
 == (d)
