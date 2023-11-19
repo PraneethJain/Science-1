@@ -94,7 +94,7 @@ $ ket(x_2) = mat(1; 0) $
 $therefore$ for $sigma_3$, eigenvalues are $-1, 1$, and corresponding orthogonal eigenvectors are $mat(0; alpha), mat(beta; 0)$, which upon normalizing give $mat(0; 1), mat(1; 0)$.
 
 == (c)
-Since $ket(phi) = sum_i c_i ket(lambda_i), therefore P(lambda_i) = |c_i|^2$
+Since $ket(phi) = sum_i c_i ket(lambda_i), therefore P(ket(lambda_i)) = |c_i|^2$
 
 $P(hat(A))$ in $ket(phi)$ is $|angle.l x_1| phi angle.r|^2$ for state $ket(x_1)$
 
