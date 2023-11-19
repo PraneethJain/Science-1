@@ -241,9 +241,22 @@ $ angle.l H angle.r = (planck.reduce^2 pi^2)/(2 m L^3)((5 L) / 2 + (e^(i (3 pi^2
 $ angle.l H angle.r = (planck.reduce^2 pi^2)/(2 m L^3)((5 L) / 2) $
 $ angle.l H angle.r = (5 planck.reduce^2 pi^2)/(4 m L^2) $
 
-Variance $= sigma_H^2 = angle.l H^2 angle.r - angle.l H angle.r^2$
+We find the average second moment
+$ angle.l H^2 angle.r = integral_0^L psi^dagger H^2 psi d x $
+$ angle.l H^2 angle.r = h^4/(4 m^2 L) integral_0^L (e^(i (pi^2 planck.reduce^2)/(2 m L^2) t) sin((pi x)/ L) +  e^(i (2 pi^2 planck.reduce^2)/(m L^2) t) sin((2 pi x)/ L))(diff^4/(diff x^4)(e^(-i (pi^2 planck.reduce^2)/(2 m L^2) t) sin((pi x)/ L) + e^(-i (2 pi^2 planck.reduce^2)/(m L^2) t) sin((2 pi x)/ L))) d x $
 
-TO DO
+$ angle.l H^2 angle.r = (h^4 pi^4)/(4 m^2 L^5) integral_0^L (e^(i (pi^2 planck.reduce^2)/(2 m L^2) t) sin((pi x)/ L) +  e^(i (2 pi^2 planck.reduce^2)/(m L^2) t) sin((2 pi x)/ L))(e^(-i (pi^2 planck.reduce^2)/(2 m L^2) t) sin((pi x)/ L) + 16 e^(-i (2 pi^2 planck.reduce^2)/(m L^2) t) sin((2 pi x)/ L)) d x $
+
+$ angle.l H^2 angle.r = (h^4 pi^4)/(4 m^2 L^5) integral_0^L (sin^2((pi x)/L) + 16 sin^2((2 pi x)/L) + sin((pi x)/L) sin((2 pi x)/L)(16 e^(-i (3 pi^2 planck.reduce^2)/(2 m L^2) t) + e^(i (3 pi^2 planck.reduce^2)/(2 m L^2) t))) d x $
+
+$ angle.l H^2 angle.r = (h^4 pi^4)/(4 m^2 L^5) (17 L)/2 $
+$ angle.l H^2 angle.r = (17 h^4 pi^4)/(8 m^2 L^4) $
+
+Variance $= sigma_H^2 = angle.l H^2 angle.r - angle.l H angle.r^2$
+$ sigma_H^2 = (17 h^4 pi^4)/(8 m^2 L^4) - (25 h^4 pi^4)/(16 m^2 L^4) $
+$ sigma_H^2 = (9 h^4 pi^4)/(16 m^2 L^4) $
+
+Note that both the average energy and variance in energy are time independent, therefore remain the same at $t=0$ and later.
 
 == (b)
 $ ket(psi(x, t)) = 1/sqrt(L) e^(-i (pi^2 planck.reduce^2)/(2 m L^2) t) sin((pi x)/ L) +  1/sqrt(L) e^(-i (2 pi^2 planck.reduce^2)/(m L^2) t) sin((2 pi x)/ L) $
