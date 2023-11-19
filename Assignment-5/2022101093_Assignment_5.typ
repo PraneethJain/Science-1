@@ -170,3 +170,54 @@ $ Delta sigma_1 Delta sigma_3  >= 1/2 |2i| $
 $ Delta sigma_1 Delta sigma_3  >= 1 $
 
 These are the corresponding uncertainty relations.
+
+= Question 2
+$ V(x) = cases(
+  0 " for" 0 < x < L,
+  infinity " for" x <= 0 " or" x >= L
+) $
+
+$ psi = 1/sqrt(2) ket(phi_1) + 1/sqrt(2) ket(phi_2) $
+
+We use the time independent Schrödinger equation
+$ -planck.reduce^2/(2m) d/(d x^2) psi(x) + V(x) psi(x) = E psi(x) $
+For $x <= 0$ or $x >= L$, we have
+$ -planck.reduce^2/(2m) d/(d x^2) psi(x) + (infinity) psi(x) = E psi(x) $
+which implies $psi(x) = 0  " " forall x in.not (0, L) $
+
+For regions inside the wall, we have
+$ -planck.reduce^2/(2m) d/(d x^2) psi(x) + 0 * psi(x) = E psi(x) $
+$ -planck.reduce^2/(2m) d/(d x^2) psi(x) = E psi(x) $
+$ d/(d x^2) psi(x) = -(2 m E)/planck.reduce^2 psi(x) $
+We know the general solution to this differential equation is
+$ psi(x) = A sin(k x) + B cos(k x) " where " k = sqrt((2 m E)/planck.reduce^2) $
+At $x = 0$
+$ psi(0) = A sin(0) + B cos(0) $
+$ B = 0 $
+At $x = L$
+$ psi(L) = A sin(k L) + 0 cos (k L) $
+$ 0 = sin(k L) $
+$ k = (n pi)/ L $
+$ sqrt((2 m E)/planck.reduce^2) = (n pi)/ L $
+$ (2 m E)/planck.reduce^2 = (n^2 pi^2)/ L^2 $
+$ E = n^2 (pi^2 planck.reduce^2)/(2 m L^2) $
+The first two lowest energies are $E_1 = (pi^2 planck.reduce^2)/(2 m L^2), E_2 = (2 pi^2 planck.reduce^2)/(m L^2)$
+
+Since the total probability of the particle existing at any position is $1$
+$ integral_0^L psi^2(x)d x = 1 $
+$ integral_0^L A^2 sin^2(k x) d x = 1 $
+$ integral_0^L A^2 sin^2((n pi x)/ L) d x = 1 $
+$ A^2 L / 2 = 1 $
+$ A = sqrt(2 / L) $
+
+Now, we know that
+$ ket(psi(x, t)) = 1/sqrt(2) e^(-i E_1 t) ket(phi_1) + 1/sqrt(2) e^(-i E_2 t) ket(phi_2) $
+$ ket(psi(x, t)) = 1/sqrt(L) e^(-i (pi^2 planck.reduce^2)/(2 m L^2) t) sin((pi x)/ L) +  1/sqrt(L) e^(-i (2 pi^2 planck.reduce^2)/(m L^2) t) sin((2 pi x)/ L) $
+
+== (a)
+
+== (b)
+
+== (c)
+
+== (d)
